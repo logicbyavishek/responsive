@@ -351,4 +351,47 @@ header .container .info .cta a:last-child:hover {
 
 .swiper-pagination-bullets {
   background: var(--color-primary);
+}
+
+#faqs h2 {
+  text-align: center;
+  margin-bottom: 5rem;
+}
+#faqs .content {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 1rem;
+}
+#faqs .content article {
+  padding: 2rem;
+  border-radius: 0.5rem;
+  display: flex;
+  gap: 1.4rem;
+  height: -moz-fit-content;
+  height: fit-content;
+  background: var(--color-primary);
+  cursor: pointer;
+}
+#faqs .content article h4 {
+  color: var(--color-white);
+  font-size: 1rem;
+}
+#faqs .content article i {
+  color: var(--color-white);
+  font-size: 1.2rem;
+}
+#faqs .content article p {
+  margin-top: 1rem;
+  color: var(--color-light);
+  display: none;
+}
+#faqs .content .open p {
+  display: block;
+}
+#faqs a.btn {
+  display: block;
+  margin: 0 auto;
+  width: 12rem;
+  text-align: center;
+  margin-top: 1.6rem;
 }/*# sourceMappingURL=style.css.map */
