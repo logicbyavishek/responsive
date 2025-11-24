@@ -394,4 +394,111 @@ header .container .info .cta a:last-child:hover {
   width: 12rem;
   text-align: center;
   margin-top: 1.6rem;
+}
+
+#cta .container {
+  background: var(--color-primary);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 2rem 5rem;
+  border-radius: 2rem;
+  position: relative;
+  height: 20rem;
+}
+#cta .container .info {
+  width: 26rem;
+}
+#cta .container .info h3 {
+  margin-bottom: 1rem;
+  color: var(--color-white);
+}
+#cta .container .info p {
+  color: var(--color-light);
+}
+#cta .container .image {
+  position: absolute;
+  top: -5rem;
+  right: 30%;
+}
+#cta .container .btn {
+  align-self: flex-end;
+}
+
+footer {
+  background: var(--color-primary);
+  margin-top: 8rem;
+  padding-top: 5rem;
+  font-size: 0.9rem;
+  color: var(--color-light);
+}
+footer .container {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 3rem;
+  justify-content: space-between;
+}
+footer .container h4 {
+  color: var(--color-white);
+  margin-bottom: 1.6rem;
+}
+footer .container .f1 .logo {
+  width: 6rem;
+}
+footer .container .f1 p {
+  margin: 1rem 0 2rem;
+}
+footer .container .f1 .subscribe {
+  background: transparent;
+  border: 1px solid var(--color-light);
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  height: 3rem;
+}
+footer .container .f1 .subscribe input {
+  background: transparent;
+  color: var(--color-white);
+  margin-left: 1rem;
+}
+footer .container .f1 .subscribe input::-moz-placeholder {
+  color: var(--color-light);
+}
+footer .container .f1 .subscribe input::placeholder {
+  color: var(--color-light);
+}
+footer .container .f1 .subscribe button {
+  background: var(--color-white);
+  color: var(--color-black);
+  transition: all 300ms ease;
+  width: 3rem;
+  height: 100%;
+  font-size: 1.3rem;
+}
+footer .container .f1 .subscribe button:hover {
+  background: var(--color-light);
+  color: var(--color-primary);
+  cursor: pointer;
+}
+footer .container .f4 p {
+  margin-bottom: 1.6rem;
+}
+footer .container .socials {
+  display: flex;
+  grid-auto-flow: 1rem;
+  font-size: 1.4rem;
+}
+footer ul li a {
+  color: var(--color-light);
+}
+footer ul li a:hover {
+  color: var(--width);
+  text-decoration: underline;
+}
+footer .copyright {
+  text-align: center;
+  margin-top: 4rem;
+  padding: 1.2rem 0;
+  color: var(--color-white);
+  border-top: 1px solid var(--color-primary);
 }/*# sourceMappingURL=style.css.map */
