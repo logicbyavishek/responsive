@@ -558,6 +558,12 @@ footer .copyright {
     background: var(--color-primary);
     box-shadow: 1rem 0 2rem rgba(0, 0, 0, 0.3);
     z-index: 3;
+    display: none;
+  }
+  nav .container ul li {
+    height: 4rem;
+    display: flex;
+    align-items: center;
   }
   nav .container ul li a {
     width: 100%;
@@ -565,5 +571,40 @@ footer .copyright {
   }
   nav .container ul li a:hover {
     padding-left: 3rem;
+  }
+  nav button {
+    display: inline-block;
+    cursor: pointer;
+    background: transparent;
+    color: var(--color-black);
+    margin-right: 2rem;
+    font-size: 1.6rem;
+  }
+  nav button#close-btn {
+    display: none;
+  }
+  header {
+    top: 7rem;
+    height: 100%;
+  }
+  header .container {
+    grid-template-columns: 1fr 1fr;
+    gap: 0;
+    margin-top: 0;
+  }
+  header .container .details {
+    display: none;
+  }
+  section#products .container {
+    width: var(--mobile-width);
+  }
+  #faqs h2 {
+    margin-bottom: 3%;
+  }
+  #faqs .cpntent {
+    -ms-grid-column-span: 1fr;
+  }
+  #faq .content airtcle {
+    padding: 1.5rem;
   }
 }/*# sourceMappingURL=style.css.map */
