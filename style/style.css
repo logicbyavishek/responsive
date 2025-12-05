@@ -155,7 +155,6 @@ nav .icons a i:hover {
 }
 
 header {
-  height: 100vh;
   max-width: 100vw;
   position: relative;
   top: 5rem;
@@ -212,7 +211,6 @@ header .container .info .cta a:last-child:hover {
 #commercial {
   background: var(--color-primary-variant);
   width: 100vw;
-  height: 100vh;
   position: fixed;
   top: 0;
   left: 0;
@@ -271,7 +269,7 @@ header .container .info .cta a:last-child:hover {
   width: 8rem;
 }
 #why-choose-us .container .head .right h4 {
-  margin-top: 1rem;
+  margin-top: 0.5rem;
   color: var(--color-dark);
   font-weight: 700;
 }
@@ -280,7 +278,7 @@ header .container .info .cta a:last-child:hover {
   grid-template-columns: 1fr 1fr;
   align-items: center;
   gap: 3rem;
-  margin-top: 6rem;
+  margin-top: 1rem;
 }
 #why-choose-us .container article h4 {
   margin-bottom: 1.4rem;
@@ -304,7 +302,7 @@ header .container .info .cta a:last-child:hover {
 
 #trusted-clients h4 {
   text-align: center;
-  font-size: 1rem;
+  font-size: 2rem;
   text-transform: uppercase;
   font-weight: 700;
 }
@@ -312,25 +310,25 @@ header .container .info .cta a:last-child:hover {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  margin-top: 4rem;
+  margin-top: 1rem;
   gap: 4rem;
 }
 
 .swiper {
   width: var(--width);
-  height: 100%;
-  margin-top: 12rem;
+  height: 80%;
+  margin-top: 1rem;
 }
 
 .swiper-wrapper {
   width: var(--width);
-  margin-bottom: 3rem;
+  margin-bottom: 0.5rem;
 }
 
 .swiper-slide {
   display: flex;
   align-items: center;
-  gap: 5rem;
+  gap: 1rem;
 }
 .swiper-slide .details h4 {
   color: var(--color-primary);
@@ -598,13 +596,30 @@ footer .copyright {
   section#products .container {
     width: var(--mobile-width);
   }
-  #faqs h2 {
-    margin-bottom: 3%;
+  section#faqs h2 {
+    margin-bottom: 3rem;
   }
-  #faqs .cpntent {
-    -ms-grid-column-span: 1fr;
+  section#faqs .content {
+    grid-template-columns: 1fr;
   }
-  #faq .content airtcle {
+  section#faqs .content airtcle {
     padding: 1.5rem;
+  }
+  section#cta .container {
+    padding: 4rem 2rem;
+  }
+  section#cta .info {
+    width: 56%;
+    align-self: flex-start;
+  }
+  section#cta .container .image {
+    position: absolute;
+    right: 11rem;
+  }
+  section#cta .container .btn {
+    z-index: 1;
+  }
+  footer .container {
+    grid-template-columns: 1fr 1fr;
   }
 }/*# sourceMappingURL=style.css.map */
