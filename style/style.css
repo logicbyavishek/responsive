@@ -701,6 +701,7 @@ footer .copyright {
   }
   .swiper {
     height: 107%;
+    width: var(--mobile-width);
   }
   .swiper-slide {
     flex-direction: column;
