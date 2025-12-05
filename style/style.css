@@ -211,6 +211,7 @@ header .container .info .cta a:last-child:hover {
 #commercial {
   background: var(--color-primary-variant);
   width: 100vw;
+  height: 100vh;
   position: fixed;
   top: 0;
   left: 0;
@@ -316,7 +317,7 @@ header .container .info .cta a:last-child:hover {
 
 .swiper {
   width: var(--width);
-  height: 80%;
+  height: 100%;
   margin-top: 1rem;
 }
 
@@ -621,5 +622,123 @@ footer .copyright {
   }
   footer .container {
     grid-template-columns: 1fr 1fr;
+  }
+}
+@media screen and (max-width: 600px) {
+  h1 {
+    font-size: 3.4rem;
+  }
+  h2 {
+    font-size: 2.4rem;
+  }
+  h3 {
+    font-size: 1.6rem;
+  }
+  h4 {
+    font-size: 0.96rem;
+  }
+  h5 {
+    font-size: 0.7rem;
+  }
+  p {
+    font-size: 0.84rem;
+  }
+  section {
+    padding-top: 8rem;
+  }
+  nav .container.icons {
+    gap: 1rem;
+  }
+  header .container {
+    grid-template-columns: 1fr;
+    text-align: center;
+  }
+  header .delivery {
+    display: none;
+  }
+  header .container .info p {
+    font-size: 1rem;
+  }
+  header .container .cta {
+    flex-direction: column;
+    margin-top: 1rem;
+    gap: 1rem;
+  }
+  header .container .header-image {
+    grid-row: 1;
+    width: 60vw;
+    margin: 0 auto;
+  }
+  section#commercial .container {
+    width: var(--mobile-width);
+    margin: 0 auto;
+  }
+  section#products {
+    margin-top: 4rem;
+  }
+  section#products .container article {
+    grid-template-columns: 1fr;
+    text-align: center;
+    gap: 1.4rem;
+  }
+  section#products .container article p {
+    margin: 1rem 0;
+  }
+  section#products .container article .image {
+    width: 100%;
+    padding-left: 5rem;
+  }
+  section#why-choose-us .container .head .right {
+    display: none;
+  }
+  section#why-choose-us .container article {
+    grid-template-columns: 1fr;
+    gap: 1rem;
+    text-align: center;
+  }
+  section#trusted-clients {
+    display: none;
+  }
+  .swiper {
+    height: 107%;
+  }
+  .swiper-slide {
+    flex-direction: column;
+    gap: 2rem;
+  }
+  section#cta .container {
+    flex-direction: column;
+    height: -moz-fit-content;
+    height: fit-content;
+    padding: 2rem;
+  }
+  section#cta .container .info {
+    width: 100%;
+  }
+  section#cta .container .info h3 {
+    font-size: 2.3rem;
+  }
+  section#cta .container .info p {
+    font-size: 1rem;
+  }
+  section#cta .container .image {
+    position: relative;
+    top: 2rem;
+    right: 30%;
+  }
+  footer .container {
+    grid-template-columns: 1fr;
+    gap: 3rem;
+    text-align: center;
+  }
+  footer .container .logo {
+    margin: 0 auto;
+  }
+  footer .socials {
+    display: flex;
+    justify-content: center;
+  }
+  footer .socials i {
+    font-size: 1.5rem;
   }
 }/*# sourceMappingURL=style.css.map */
