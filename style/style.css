@@ -534,7 +534,6 @@ footer .container .f1 .logo .subscribe button {
   font-size: 1.3rem;
 }
 footer .container .f1 .logo .subscribe button:hover {
-  background: var(--color-light);
   color: var(--color-primary);
   cursor: pointer;
 }
