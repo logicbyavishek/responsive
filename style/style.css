@@ -315,32 +315,47 @@ header .container .info .cta a:last-child:hover {
   gap: 4rem;
 }
 
+/* container */
 .swiper {
   width: var(--width);
   height: 100%;
   margin-top: 1rem;
+  box-sizing: border-box;
 }
 
+/* wrapper */
 .swiper-wrapper {
   width: var(--width);
   margin-bottom: 0.5rem;
+  box-sizing: border-box;
 }
 
+/* slide */
 .swiper-slide {
   display: flex;
   align-items: center;
   gap: 1rem;
+  padding: 1rem;
+  box-sizing: border-box;
+  background: #fff;
+  border-radius: 8px;
 }
+
+/* details block inside each slide */
 .swiper-slide .details h4 {
   color: var(--color-primary);
   font-size: 1rem;
+  margin: 0;
 }
+
 .swiper-slide .details h2 {
   margin: 1rem 0;
 }
+
 .swiper-slide .details p {
   margin-bottom: 1rem;
 }
+
 .swiper-slide .details h5 {
   color: var(--color-black);
   font-size: 1.3rem;
@@ -349,8 +364,43 @@ header .container .info .cta a:last-child:hover {
   margin: 1.6rem 0 0.4rem;
 }
 
-.swiper-pagination-bullets {
+/* pagination bullet (correct class name used by Swiper) */
+.swiper-pagination-bullet {
   background: var(--color-primary);
+  opacity: 1; /* ensure visible */
+}
+
+/* small spacing for the pagination container */
+.swiper-pagination {
+  margin-top: 1rem;
+  text-align: center;
+}
+
+/* base bullet: smaller and semi-transparent */
+.swiper-pagination-bullet {
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  background: var(--color-primary);
+  opacity: 0.35; /* non-active bullets are dim */
+  transform: scale(1); /* base size */
+  transition: opacity 0.22s ease, transform 0.22s ease, background-color 0.22s;
+  margin: 0 6px; /* spacing between bullets */
+}
+
+/* active bullet: full opacity and slightly larger */
+.swiper-pagination-bullet-active {
+  opacity: 1;
+  transform: scale(1.25);
+  /* optionally change color for active state:
+     background: var(--color-accent); */
+}
+
+/* ensure pagination container is visible and above slides */
+.swiper-pagination {
+  margin-top: 1rem;
+  text-align: center;
+  z-index: 10;
 }
 
 #faqs h2 {
@@ -700,7 +750,7 @@ footer .copyright {
     display: none;
   }
   .swiper {
-    height: 107%;
+    height: 100%;
     width: var(--width);
   }
   .swiper-slide {
