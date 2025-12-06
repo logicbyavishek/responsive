@@ -395,6 +395,23 @@
     <script src="https://cdn.jsdelivr.net/npm/swiper@12/swiper-bundle.min.js"></script>
     <script src="./script/script.js"></script>
     <script>
+        //swiper js (testimonial)
+        document.addEventListener('DOMContentLoaded', () => {
+        const swiper = new Swiper('.swiper', {
+            loop: true,
+            pagination: {
+            el: '.swiper-pagination',   // correct selector
+            type: 'bullets',
+            clickable: true,            // important for bullet interaction
+            },
+            // optional visual settings
+            slidesPerView: 1,
+            spaceBetween: 20,
+            autoplay: { delay: 4000, disableOnInteraction: false },
+        });
+        });
+
+
         //open video
         const showcommercialbtn = document.querySelector("#show-commercial-btn");
         let commercial = document.querySelector("#commercial");

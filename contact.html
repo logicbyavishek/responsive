@@ -14,6 +14,7 @@
     rel="stylesheet"
 />
     <link rel="stylesheet" href="./style/style.css">
+    <link rel="stylesheet" href="contact.css">
 </head>
 <body>
     <!-- START OF NAVBAR -->
@@ -23,8 +24,8 @@
 
             <ul>
                 <li><a href="index.html" class="active">Home</a></li>
-                <li><a href="#products">Products</a></li>
-                <li><a href="#why-choose-us">Why choose us ?</a></li>
+                <li><a href="index.html#products">Products</a></li>
+                <li><a href="index.html#why-choose-us">Why choose us ?</a></li>
                 <li><a href="faq.html">FAQs</a></li>
                 <li><a href="contact.html">Let's  talk</a></li>
             </ul>
@@ -53,7 +54,7 @@
                             <h5>Chat with us</h5>
                             <small>Send us an email and we'll respond
                             shortly.</small>
-                            <p>info@egattor.com</p>
+                            <p>info@company.com</p>
                         </div>
                     </article>
 
@@ -81,9 +82,9 @@
             <form>
                 <input type="text" name="Name" placeholder="Your Name" required>
                 <input type="email" name="Email Address" placeholder="your@yourcompany.com" required>
-                <input type="number" name="Phone Number" placeholder="Phone Number" required>
+                <input type="text" name="Phone Number" placeholder="Phone Number" required>
                 <textarea name="message" placeholder="Message" required></textarea>
-                <button type="submit">Send</button>
+                <button class="btn" type="submit">Send</button>
             </form>
         </div>
     </section>
@@ -104,8 +105,8 @@
                 <h4>Permanlinks</h4>
                 <ul>
                 <li><a href="index.html" >Home</a></li>
-                <li><a href="#products">Products</a></li>
-                <li><a href="#why-choose-us">Why choose us ?</a></li>
+                <li><a href="index.html#products">Products</a></li>
+                <li><a href="index.html#why-choose-us">Why choose us ?</a></li>
                 <li><a href="faq.html">FAQs</a></li>
                 <li><a href="contact.html">Let's  talk</a></li>
             </ul>
@@ -142,21 +143,5 @@
 
     <script src="https://cdn.jsdelivr.net/npm/swiper@12/swiper-bundle.min.js"></script>
     <script src="./script/script.js"></script>
-    <script>
-        //open video
-        const showcommercialbtn = document.querySelector("#show-commercial-btn");
-        let commercial = document.querySelector("#commercial");
-        showcommercialbtn.addEventListener('click', (e)=>{
-            commercial.style.display="grid";
-        });
-
-        //close video
-        document.body.addEventListener('click',(e)=>{
-            if(e.target.id==="commercial"){
-                commercial.style.display="none";
-            }
-        })
-        
-    </script>
 </body>
 </html>
