@@ -119,10 +119,14 @@ nav {
   position: fixed;
   z-index: 2;
   background-color: white;
-  box-shadow: 0 1rem 1rem rgba(0, 0, 0, 0.1);
+  transition: background-color 0.2s, box-shadow 0.2s;
 }
 nav button {
   display: none;
+}
+nav.window-scroll {
+  background: var(--color-primary);
+  box-shadow: 0 1rem 1rem rgba(0, 0, 0, 0.1);
 }
 nav .container {
   display: flex;

@@ -63,3 +63,20 @@ document.addEventListener('DOMContentLoaded', () => {
     });
   });
 });
+
+
+document.addEventListener('DOMContentLoaded', () => {
+  const nav = document.querySelector('nav');
+  if (!nav) return;
+
+  const onScroll = () => {
+    nav.classList.toggle('window-scroll', window.scrollY > 0);
+  };
+
+  // set initial state (in case page is loaded scrolled)
+  onScroll();
+
+  // use passive listener for better performance
+  window.addEventListener('scroll', onScroll, { passive: true });
+});
+
