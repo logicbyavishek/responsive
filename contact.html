@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CONTACT</title>
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Abhaya+Libre:wght@800&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+    <!-- Remix icobs CDN -->
+    <link
+    href="https://cdn.jsdelivr.net/npm/remixicon@4.7.0/fonts/remixicon.css"
+    rel="stylesheet"
+/>
+    <link rel="stylesheet" href="./style/style.css">
+</head>
+<body>
+    <!-- START OF NAVBAR -->
+    <nav>
+        <div class="container">
+            <a href="index.html" class="logo"><img src="./images/png-clipart-google-icons-google-small-four-assorted-color-logo-screenshot-removebg-preview (1).png" alt=""></a>
+
+            <ul>
+                <li><a href="index.html" class="active">Home</a></li>
+                <li><a href="#products">Products</a></li>
+                <li><a href="#why-choose-us">Why choose us ?</a></li>
+                <li><a href="faq.html">FAQs</a></li>
+                <li><a href="contact.html">Let's  talk</a></li>
+            </ul>
+
+            <div class="icons">
+                    <a><i class="ri-search-line"></i></a>
+                    <a><i class="ri-shopping-basket-2-line"></i></a>
+                    <a><i class="ri-user-line"></i></a>
+            </div>
+
+            <button id="menu-btn"><i class="ri-menu-fill"></i></button>
+            <button id="close-btn"><i class="ri-close-large-fill"></i></button>
+        </div>
+    </nav>
+    <!-- END OF NAVBAR -->
+
+    <section id="contact">
+        <div class="container">
+            <aside>
+                <h4>Get in touch</h4>
+                    <p>We'd love to here from you. Our friendly team is here to chat.</p>
+                <div class="info">
+                    <article>
+                            <span class="icon"><i class="ri-mail-fill"></i></span>
+                        <div class="details">
+                            <h5>Chat with us</h5>
+                            <small>Send us an email and we'll respond
+                            shortly.</small>
+                            <p>info@egattor.com</p>
+                        </div>
+                    </article>
+
+                    <article>
+                        <span class="icon"><i class="ri-map-pin-line"></i></span>
+                        <div class="details">
+                            <h5>Office</h5>
+                                <small>Come say hello at our office HQ.</small>
+                                <p>123 Mills Street</p>
+                                <p>East Airport, Accra</p>
+                        </div>
+                    </article>
+
+                    <article>
+                    <span class="icon"><i class="ri-phone-fill"></i></span>
+                    <div class="details">
+                        <h5>Phone</h5>
+                        <small>Mon-Fri from 9am 5pm.</small>
+                        <p>+(123) 456-7890</p>
+                    </div>
+                    </article>
+                </div>
+            </aside>
+            
+            <form>
+                <input type="text" name="Name" placeholder="Your Name" required>
+                <input type="email" name="Email Address" placeholder="your@yourcompany.com" required>
+                <input type="number" name="Phone Number" placeholder="Phone Number" required>
+                <textarea name="message" placeholder="Message" required></textarea>
+                <button type="submit">Send</button>
+            </form>
+        </div>
+    </section>
+
+    <footer>
+        <div class="container">
+            <div class="f1">
+                <div class="logo">
+                    <img src="./images/png-clipart-google-icons-google-small-four-assorted-color-logo-screenshot-removebg-preview (1).png" alt="">
+                    <p>Lorem, ipsum dolor sit amet consectetur.</p>
+                    <div class="subscribe">
+                        <input type="email" placeholder="Enter Email">
+                        <button><i class="ri-arrow-right-long-line"></i></button>
+                    </div>
+                </div>
+            </div>
+            <div class="f2">
+                <h4>Permanlinks</h4>
+                <ul>
+                <li><a href="index.html" >Home</a></li>
+                <li><a href="#products">Products</a></li>
+                <li><a href="#why-choose-us">Why choose us ?</a></li>
+                <li><a href="faq.html">FAQs</a></li>
+                <li><a href="contact.html">Let's  talk</a></li>
+            </ul>
+            </div>
+            <div class="f3">
+                <h4>Privacy</h4>
+                <ul>
+                    <li><a href="#">Privacy Policy</a></li>
+                    <li><a href="#">Terms and Condition</a></li>
+                    <li><a href="#">Refund Policy</a></li>
+                </ul>
+            </div>
+            <div class="f4">
+                <h4>Contact Us</h4>
+                <p>+91 9563144097 <br>
+                support@google.com</p>
+                <div class="socials">
+                    <ul>
+                        <li><a href="#"><i class="ri-instagram-line"></i></a></li>
+                        <li><a href="#"><i class="ri-twitter-line"></i></a></li>
+                        <li><a href="#"><i class="ri-behance-line"></i></a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div class="copyright">
+            <small>All copyright &copy; Logicbyavishek</small>
+        </div>
+    </footer>
+
+    <!-- footer end -->
+
+
+
+    <script src="https://cdn.jsdelivr.net/npm/swiper@12/swiper-bundle.min.js"></script>
+    <script src="./script/script.js"></script>
+    <script>
+        //open video
+        const showcommercialbtn = document.querySelector("#show-commercial-btn");
+        let commercial = document.querySelector("#commercial");
+        showcommercialbtn.addEventListener('click', (e)=>{
+            commercial.style.display="grid";
+        });
+
+        //close video
+        document.body.addEventListener('click',(e)=>{
+            if(e.target.id==="commercial"){
+                commercial.style.display="none";
+            }
+        })
+        
+    </script>
+</body>
+</html>
